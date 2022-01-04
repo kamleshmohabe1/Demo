@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>View data</title>
+</head>
+<body>
+<table align="center" border="1">
+	<tr>
+		<th>Ser No</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Phone</th>
+		<th colspan="2">Update</th>
+	</tr>
+	{% for i in data %}
+		<tr>
+			<td>{{i.0}}</td>
+			<td>{{i.1}}</td>
+			<td>{{i.2}}</td>
+			<td>{{i.3}}</td>
+			<td>{{i.4}}</td>
+			<td><a href="edit?SerNo={{i.0}}">Edit</td>
+			<td><a href="delete?SerNo={{i.0}}">Delete</td>
+		</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

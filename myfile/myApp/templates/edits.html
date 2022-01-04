@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<form action="updateData">
+	<table align="center" border="1">
+		<tr>
+			<td>Ser No</td>
+			<td><input type="text" name="SerNo" value="{{data.0}}" readonly></td>
+		</tr>
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="Fname" value="{{data.1}}"></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" name="Lname" value="{{data.2}}"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" name="Email" value="{{data.3}}"></td>
+		</tr>
+		<tr>
+			<td>Phone</td>
+			<td><input type="text" name="Phone" value="{{data.4}}"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" name="btn" value="update"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
